@@ -1,4 +1,8 @@
+from time import sleep
 velocidade = int(input('Quantos km/hs você estava correndo? '))
+
+print('CALCULANDO...')
+sleep(2)
 
 if velocidade > 80:
     multa = float((velocidade - 80) * 7)
