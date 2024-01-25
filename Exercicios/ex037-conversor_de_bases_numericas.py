@@ -10,6 +10,6 @@ elif conversao == 2:
     print(oct(conversao))
 elif conversao == 3:
     print('Convertendo para hexadecimal...')
-    print(oct(conversao))
+    print(hex(conversao))
 else:
     print('Você digitou uma base inválida!\nTente novamente!')
