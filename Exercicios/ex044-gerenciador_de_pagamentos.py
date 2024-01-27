@@ -18,5 +18,7 @@ elif metodo == 'c': # 2x cartão
 elif metodo == 'd': #3x ou + no cartão
     # 20% de juros
     preco_novo = preco * 1.2
+else:
+    print('Opção de pagamento inválida! \nTente novamente!')
 
 print('De acordo com o método de pagamento, o valor do pagamento total é de R${:.2f}'.format(preco_novo))
