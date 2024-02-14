@@ -21,14 +21,14 @@ while acao != 5:
         print('A soma entre {} e {} é igual a {}'.format(num1, num2, soma))
 
     # 2- Multiplicar
-    if acao == 2:
+    elif acao == 2:
         print('MULTIPLICANDO...')
         sleep(2)
         multiplo = num1 * num2
         print('A multiplicação entre {} e {} é {}'.format(num1, num2, multiplo))
 
     # 3- Maior
-    if acao == 3:
+    elif acao == 3:
         print('Analisando o MAIOR NÚMERO...')
         sleep(2)
         if num1 > num2:
@@ -39,7 +39,7 @@ while acao != 5:
             print('Ambos os números são iguais: {}.'.format(num1))
 
     # 4- Novos números
-    if acao == 4:
+    elif acao == 4:
         altera = input('Qual número você deseja alterar [n1/n2]? ').lower()
         while not (altera == 'n1' or altera == 'n2'):
             altera = input(
@@ -49,6 +49,14 @@ while acao != 5:
         elif altera == 'n2':
             num2 = int(input('Alterar número {} para: '.format(num2)))
 
+    # 5- Saindo do programa
+    elif acao == 5:
+        print('Fechando o programa...')
+        sleep(2)
+    # Opção inexistente
+    else:
+        print('Comando inválido! Tente novamente!')
+
 # 5- Sair do programa
-print('\n', '='*50)
+print('='*50)
 print('PROGRAMA ENCERRADO!')
