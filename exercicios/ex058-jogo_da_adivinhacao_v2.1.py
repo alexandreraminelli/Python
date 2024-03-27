@@ -20,5 +20,4 @@ while numero != resposta:
     print('PROCESSANDO...')
     sleep(1)
 
-print('\nPARABÉNS!!! Você acertou!\nO número era {}.\nVocê fez {} palpites'.format(
-    numero, palpites))
+print(f'\nPARABÉNS!!! Você acertou!\nO número era {numero}.\nVocê fez {palpites} palpites.')
