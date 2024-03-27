@@ -1,8 +1,10 @@
-import random
+# Jogo da adivinhação - v2.1
+
+from random import randint
 from time import sleep
 
 print('ADIVINHE O NÚMERO!!!')
-numero = random.randint(0, 5000)
+numero = randint(0, 5000)
 palpites = 1
 
 resposta = int(input('Em que número eu pensei (entre 0 e 5000)? '))
